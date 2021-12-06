@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Money Management</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="moneymgmt_styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="top-desc">
+    <h2 class="main-heading">Money Management</h2>
+    <p>This tool will help you to size your positions on your trades.</p>
+    <p>Position sizing is important to manage money effectively and minimize the losses.</p>
+  </div>
+
+  <div class="mid-div">
+    <h3 class="sub-heading">How to interpret the results:</h3>
+    <p>The result will be the amount of money you should put into the stock and the <span class="sl">Stop Loss</span> price.</p>
+    <p>Setting the stop loss price is a very good practice as it limits your loss no matter what.</p>
+    <p>If you exit the trade at the specified stop loss price, the effect of the stock price falling will be minimal for you.</p>
+  </div>
+
+  <div class="bottom-div container-fluid">
+    <form action="/moneymgmt" method="post">
+
+      <h3 class="amt-heading">Enter the amount to be traded:</h3>
+      <input type="number" name="amt" placeholder="Amount" required min="0" step="any">
+      <hr>
+
+      <h4>For Stock 1:</h4>
+      <span>Enter the entry price of the stock: </span>
+      <input type="number" name="ent1" placeholder="Entry price" required min="0" step="any">
+      <br>
+      <hr>
+
+      <h4>For Stock 2:</h4>
+      <span>Enter the entry price of the stock: </span>
+      <input type="number" name="ent2" placeholder="Entry price" required min="0" step="any">
+      <br>
+      <hr>
+
+      <h4>For Stock 3:</h4>
+      <span>Enter the entry price of the stock: </span>
+      <input type="number" name="ent3" placeholder="Entry price" required min="0" step="any">
+      <br>
+      <hr>
+
+      <button class="btn btn-lg btn-dark btn-cust" type="submit" name="submit-button">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

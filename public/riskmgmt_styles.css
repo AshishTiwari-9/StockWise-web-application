@@ -1,0 +1,57 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+.main-heading, .sub-heading, p {
+  color: #FFF;
+}
+
+hr {
+  background-color: white;
+  border-style: none;
+  border-top-style: solid; 
+  border-color: grey;
+  border-width: 5px;
+  width: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.top-desc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  background-color: #1597BB;
+}
+
+.mid-div {
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  background-color: #1597BB;
+}
+
+.neg {
+  font-weight: bold;
+}
+
+.req-data-heading {
+  margin-bottom: 60px;
+}
+
+.form-span {
+  margin-left: 15%;
+}
+
+.bottom-div {
+  margin-bottom: 10%;
+}
+
+.btn-cust {
+  margin-top: 1%;
+  background-color: #1597BB;
+}

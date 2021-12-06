@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Risk Management</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="riskmgmt_styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="top-desc">
+    <h2 class="main-heading">Risk Management</h2>
+    <p>Here you can identify the risks related to the stocks that you are interested in.</p>
+    <p>The risk is identified by the % values of expectancy of each trade.</p>
+  </div>
+
+  <div class="mid-div">
+    <h3 class="sub-heading">How to interpret the results:</h3>
+    <p>The results will be a percentage value for each scrip.</p>
+    <p>If the result is x% for a scrip, it means that for every trade being made at that price, you gain x% amount of your invested value.</p>
+    <p><span class="neg">If the result is negative, then executing that trade should be avoided,</span> as you will loose x% amount of your invested amount for every trade.</p>
+  </div>
+
+  <div class="bottom-div container-fluid">
+    <h3 class="req-data-heading">Enter the required data here:</h3>
+
+    <form action="/riskmgmt" method="post">
+      <h4>For stock 1:</h4>
+      <span>Enter projected gain %: </span>
+      <input type="text" name="gain1" placeholder="Gain" required>
+      <span class="form-span">Enter the Probability of gain: </span>
+      <input type="number" name="probab1" placeholder="Probability %" required min="0" max="1" step="0.01">
+      <br> <br>
+      <span>Enter projected loss %: </span>
+      <input type="text" name="loss1" placeholder="Loss" required>
+      <span class="form-span">Enter the Probability of loss: </span>
+      <input type="number" name="lprobab1" placeholder="Probability" required min="0" max="1" step="0.01">
+      <hr>
+
+      <h4>For stock 2:</h4>
+      <span>Enter projected gain %: </span>
+      <input type="text" name="gain2" placeholder="Gain" required>
+      <span class="form-span">Enter the Probability of gain: </span>
+      <input type="number" name="probab2" placeholder="Probability" required min="0" max="1" step="0.01">
+      <br> <br>
+      <span>Enter projected loss %: </span>
+      <input type="text" name="loss2" placeholder="Loss" required>
+      <span class="form-span">Enter the Probability of loss: </span>
+      <input type="number" name="lprobab2" placeholder="Probability" required min="0" max="1" step="0.01">
+      <hr>
+
+      <h4>For stock 3:</h4>
+      <span>Enter projected gain %: </span>
+      <input type="text" name="gain3" placeholder="Gain" required>
+      <span class="form-span">Enter the Probability of gain: </span>
+      <input type="number" name="probab3" placeholder="Probability" required min="0" max="1" step="0.01">
+      <br> <br>
+      <span>Enter projected loss %: </span>
+      <input type="text" name="loss3" placeholder="Loss" required>
+      <span class="form-span">Enter the Probability of loss: </span>
+      <input type="number" name="lprobab3" placeholder="Probability" required min="0" max="1" step="0.01">
+      <br>
+      <hr>
+
+      <button class="btn btn-lg btn-dark btn-cust" type="submit" name="submit-button">Submit</button>
+
+    </form>
+  </div>
+
+
+</body>
+
+</html>

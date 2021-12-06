@@ -1,0 +1,178 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.btn-cust {
+  background-color: #1597BB;
+}
+/* Title Section */
+
+#title {
+  background-color: #1597BB;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 70%;
+  margin-left: 180px;
+  position: relative;
+  bottom: 10px;
+  background-color:#1597BB;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #1597BB;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #51C2D5;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #51C2D5;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 30%;
+  margin: 20px;
+}
+
+.stock-chart {
+  width: 18%;
+  margin-left: 10%;
+}
+
+.fin-risk {
+  width: 15%;
+}
+
+.fin-risk2 {
+  width: 18%;
+  margin-left: 15%;
+}
+
+/* CTA Section */
+
+.cta-h3 {
+  color: #8F8F8F;
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #51C2D5;
+}
+
+.social-icon {
+  margin: 20px 25px;
+}
+
+.cpyright-text {
+  color: black;
+}
+
+@media (max-width: 1028px) {
+
+  .title-image {
+    position: static;
+    padding-right: 28%;
+  }
+  #title {
+    text-align: center;
+  }
+}
